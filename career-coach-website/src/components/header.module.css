@@ -1,0 +1,72 @@
+.header {
+    background: linear-gradient(135deg, #2d3748, #384255, #4d535e); 
+    padding: 20px; /* Padding for the header */
+    height: 60px; /* Set header height */
+    max-width: 1440px; /* Set maximum width */
+    margin: 0 auto; /* Center the header */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; /* Space between logo/menu and button */
+    align-items: center;
+    width: 100%;
+}
+
+.getHiredButton {
+    background-color: #ff6b6b; /* Button background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Padding for the button */
+    font-family: "Open Sans", sans-serif; /* Use Open Sans font */
+    font-size: 14px; /* Adjust font size for better readability */
+    text-align: center; /* Center text in the button */
+    letter-spacing: normal; /* Normal letter spacing */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.getHiredButton:hover {
+    background-color: #e63946; /* Change background on hover */
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    color: #ffffff; /* White text color */
+    font-size: 1.5rem; /* Logo font size */
+    text-decoration: none; /* Remove underline */
+    margin-right: 20px; /* Space between logo and menu */
+}
+
+.logoText {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-size: 24px; /* Adjusted font size for logo */
+    font-style: italic; /* Italic text for the logo */
+    color: #ff6b6b; /* Change logo text color to match the theme */
+}
+
+.menu {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between menu items */
+}
+
+.menuItem {
+    color: #ffffff; /* White text color */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-size: 16px; /* Set font size */
+    line-height: 21.328px; /* Set line height */
+    text-align: left; /* Align text to the left */
+    letter-spacing: 0.48px; /* Set letter spacing */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.menuItem:hover {
+    color: #f7fafc; /* Lighter color on hover */
+}

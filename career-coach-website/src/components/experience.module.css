@@ -1,0 +1,45 @@
+.experienceSection {
+    padding: 40px; /* Padding for the section */
+    background: linear-gradient(135deg, #ff6b6b, #f7d94c); /* Match the gradient background */
+    color: #ffffff; /* White text color for visibility */
+    text-align: center; /* Center text */
+}
+
+.experienceSection h2 {
+    font-family: "Open Sans", sans-serif; /* Use Open Sans font */
+    font-size: 28px; /* Adjusted font size for headings */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.experienceSection p {
+    color: #e0e0e0; /* Light gray for paragraph text */
+    font-size: 16px; /* Font size for paragraph */
+    margin-bottom: 30px; /* Space below the paragraph */
+}
+
+.logoContainer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center logos */
+    flex-wrap: wrap; /* Allow logos to wrap */
+    gap: 20px; /* Space between logos */
+}
+
+.logoWrapper {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center logos */
+    flex-wrap: wrap; /* Allow logos to wrap */
+}
+
+.logo {
+    max-width: 100px; /* Set a maximum width for logos */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+.largeLogo {
+    max-width: 150px; /* Larger logo size for specific logos */
+}

@@ -1,0 +1,19 @@
+.testimonialsSection {
+    margin: 2rem 0;
+    background: linear-gradient(135deg, #ff6b6b, #f7d94c); /* Match the gradient background */
+    padding: 20px; /* Padding for the section */
+    /* Removed border-radius to fit the whole screen */
+    box-shadow: none; /* Remove any shadow */
+    width: 100%; /* Ensure it takes the full width */
+    margin: 0; /* Remove margin to fit the screen */
+    color: #e2e8f0; /* Light gray color for text */
+}
+
+blockquote {
+    border-left: 4px solid #ff6b6b; /* Use primary color for the border */
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: #e2e8f0; /* Light gray color for blockquote text */
+}
+
+/* Other styles remain unchanged */

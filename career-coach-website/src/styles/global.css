@@ -1,0 +1,117 @@
+/* career-coach-website/src/styles/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6;
+    background: linear-gradient(135deg, #4a90e2, #9013fe); /* Gradient background */
+    color: #ffffff; /* Ensure text is white for better contrast */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* Ensure headings are white for visibility */
+}
+
+p {
+    color: #e0e0e0; /* Light gray for paragraph text for better readability */
+}
+
+a {
+    color: #ff6b6b; /* Primary color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: #f7d94c; /* Change to secondary color on hover */
+    text-decoration: underline; /* Add underline on hover for clarity */
+}
+
+/* Job Search Section Styles */
+.job-search-section {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center items vertically */
+    padding: 50px 20px; /* Adjust padding for mobile */
+    background: linear-gradient(135deg, #ff6b6b, #f7d94c); /* Updated gradient background */
+    color: #ffffff; /* Text color */
+    margin: 0; /* Remove margin to fit the screen */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.video-container {
+    flex: 1; /* Take up half of the space */
+    display: flex; /* Center the video */
+    justify-content: center; /* Center the video horizontally */
+    position: relative; /* Position for video */
+    z-index: 1; /* Above the stairs effect */
+    height: 215px; /* Set a fixed height for the container */
+    max-width: 680px; /* Set a maximum width for the video container */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.text-container {
+    flex: 1; /* Take up half of the space */
+    padding: 20px; /* Space between text and video */
+    position: relative; /* Position for text */
+    z-index: 1; /* Above the stairs effect */
+}
+
+.title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px; /* Adjusted font size for responsiveness */
+    line-height: 1.2; /* Adjust line height */
+    text-align: center; /* Center text */
+}
+
+.highlighted-text {
+    background: linear-gradient(to bottom, #ff6b6b, #f7d94c); /* Bright gradient */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent */
+}
+
+.button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px; /* Adjusted font size */
+    text-align: center; /* Center the text */
+    background-color: #ff6b6b; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 12px 20px; /* Increased padding for better appearance */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it a block element */
+    margin: 10px 0; /* Center the button horizontally and add margin below */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #e63946; /* Darker red on hover */
+}
+
+.avatar-wrap {
+    position: relative; /* Position for absolute children */
+    height: 50px; /* Set height to match avatar */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center avatars */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.avatar-image {
+    width: 40px; /* Set width for the avatar */
+    height: 40px; /* Set height for the avatar */
+    border-radius: 50%; /* Make it circular */
+    border: 3px solid #ffffff; /* Border color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin: 0 5px; /* Space between avatars */
+}
+
+.small-text {
+    font-size: 12px; /* Small text size */
+    color: #e0e0e0; /* Text color */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center the text vertically */
+    margin-top: 10px; /* Space above the small text */
+}

@@ -1,0 +1,62 @@
+.teamSection {
+    padding: 40px; /* Padding for the section */
+    background: linear-gradient(135deg, #4a90e2, #9013fe); /* Match the gradient background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center the text */
+}
+
+.teamTitle {
+    margin-bottom: 30px; /* Space below the title */
+    font-size: 2.5em; /* Larger font size for the title */
+    color: #ffffff; /* White color for better readability */
+}
+
+.teamText {
+    font-size: 1em; /* Adjust font size */
+    color: #e2e8f0; /* Light gray color for description */
+    margin: 10px 0; /* Space above and below the text */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.teamMemberContainer {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center items */
+}
+
+.teamMember {
+    flex: 1 1 calc(22% - 20px); /* Adjusted for 4 columns with space */
+    margin: 10px; /* Space around each team member */
+    padding: 20px; /* Padding inside each team member box */
+    background-color: #2d3748; /* Darker background for each team member */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    position: relative; /* Position for hover effect */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.teamMember:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.teamMemberImage {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height for images */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+}
+
+.teamMemberName {
+    margin-top: 10px; /* Space above team member name */
+    font-size: 1.5em; /* Adjust font size */
+    color: #ff6b6b; /* Use primary color for team member name */
+}
+
+.teamMemberRole {
+    font-size: 1em; /* Adjust font size for role */
+    color: #e2e8f0; /* Light gray color for role description */
+}

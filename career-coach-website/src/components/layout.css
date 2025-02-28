@@ -1,0 +1,154 @@
+:root {
+  --border-radius: 4px;
+  --color-text: #ffffff; /* White text for better contrast */
+  --color-primary: #ff6b6b; /* Bright red for primary elements */
+  --color-secondary: #f7d94c; /* Light yellow for accents */
+  --color-background: #1b2334; /* Dark background for sections */
+  --color-code-bg: #fff4db; /* Background for code elements */
+  --color-code: #8a6534; /* Color for code text */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --font-lg: 18px;
+  --font-md: 16px;
+  --font-sm: 14px;
+  --font-sx: 12px;
+  --line-height-loose: 1.75;
+  --line-height-normal: 1.5;
+  --line-height-dense: 1.1;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --size-content: 54rem;
+  --size-gutter: var(--space-5);
+  --size-gap: var(--space-6);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font: sans-serif;
+  font-size: var(--font-md);
+  line-height: var(--line-height-normal);
+  overflow-y: scroll;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-weight: normal;
+  margin: 0;
+  word-wrap: break-word;
+  background-color: var(--color-background); /* Set a dark background for the body */
+}
+
+a {
+  background-color: transparent;
+  color: var(--color-primary); /* Use the primary color for links */
+  text-decoration: none;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+  text-decoration: none;
+  color: var(--color-secondary); /* Change color on hover */
+}
+
+abbr[title] {
+  border-bottom: 1px dotted hsla(0, 0%, 100%, 0.5); /* Change to white for better visibility */
+  cursor: help;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+dfn {
+  font-style: italic;
+}
+
+/* Additional styles for layout consistency */
+.container {
+  max-width: 1200px; /* Set a maximum width for the layout */
+  margin: 0 auto; /* Center the layout */
+  padding: 20px; /* Add padding around the layout */
+}
+
+section {
+  margin-bottom: var(--space-6); /* Space between sections */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text); /* Ensure headings are visible */
+}
+
+p {
+  max-width: 680px; /* Limit paragraph width for better readability */
+  color: var(--color-text); /* Ensure paragraph text is visible */
+}
+
+code {
+  font-size: 0.875rem;
+}
+
+kbd {
+  font-size: 0.875rem;
+}
+
+samp {
+  font-size: 0.875rem;
+}
+
+abbr {
+  border-bottom: 1px dotted hsla(0, 0%, 100%, 0.5); /* Change to white for better visibility */
+  cursor: help;
+}
+
+acronym {
+  border-bottom: 1px dotted hsla(0, 0%, 100%, 0.5); /* Change to white for better visibility */
+  cursor: help;
+}
+
+tt,
+code {
+  background-color: var(--color-code-bg);
+  border-radius: var(--border-radius);
+  color: var(--color-code);
+  font-family: var(--font-mono);
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  word-break: normal;
+}
+
+pre code {
+  background: none;
+}
+
+code:before,
+code:after,
+tt:before,
+tt:after {
+  content: "\00a0";
+  letter-spacing: -0.2em;
+}
+
+pre code:before,
+pre code:after,
+pre tt:before,
+pre tt:after {
+  content: none;
+}

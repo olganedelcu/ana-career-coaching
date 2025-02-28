@@ -1,0 +1,64 @@
+.servicesSection {
+    padding: 40px;
+    background: linear-gradient(135deg, #4a90e2, #9013fe); /* Match the gradient background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.heading {
+    text-align: center; /* Center the section title */
+    margin-bottom: 30px; /* Space below the title */
+    font-size: 2.5em; /* Larger font size for the title */
+    color: #ffffff; /* White color for better readability */
+}
+
+.servicesContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-between; /* Space between items */
+}
+
+.service {
+    flex: 1 1 calc(22% - 20px); /* Adjusted for 4 columns with space */
+    margin: 10px; /* Space around each service */
+    padding: 20px; /* Padding inside each service box */
+    background-color: #2d3748; /* Darker background for each service */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    position: relative; /* Position for hover effect */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    height: 350px; /* Fixed height for the service cards */
+    display: flex; /* Use flexbox for internal layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space out children evenly */
+}
+
+.service:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.serviceImage {
+    width: 100%; /* Make image responsive */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+}
+
+.service h3 {
+    margin-top: 10px; /* Space above service title */
+    font-size: 1.5em; /* Adjust font size */
+    color: #ff6b6b; /* Use primary color for service title */
+}
+
+.service p {
+    margin-top: 10px; /* Space above paragraph */
+    font-size: 1em; /* Adjust font size */
+    color: #e2e8f0; /* Light gray color for description */
+    transition: transform 0.3s; /* Smooth transition for text effect */
+}
+
+.service:hover p {
+    transform: translateY(2px); /* Slight lift effect on text hover */
+}

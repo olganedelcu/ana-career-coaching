@@ -1,0 +1,29 @@
+/* career-coach-website/src/components/footer.module.css */
+.footer {
+    background: linear-gradient(135deg, #2d3748, #384255, #4d535e); 
+    height: 60px; /* Set footer height to match header */
+    max-width: 1440px; /* Set maximum width */
+    margin: 0 auto; /* Center the footer */
+    padding: 0 20px; /* Horizontal padding for the footer */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: #ffffff; /* Ensure footer text is white */
+    margin: 0; /* Remove default margin */
+}
+
+/* Optional: Add styles for links in the footer if needed */
+.footer a {
+    color: #ff6b6b; /* Primary color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer a:hover {
+    color: #f7d94c; /* Change to secondary color on hover */
+}
